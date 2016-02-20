@@ -1,6 +1,6 @@
 <?php
 
-    namespace common\components\validators;
+    namespace nox\validators;
 
     use kartik\password\StrengthValidator;
     use Yii;
@@ -8,7 +8,7 @@
     /**
      * Class PasswordStrengthValidator
      *
-     * @package common\components\validators
+     * @package nox\validators
      */
     class PasswordStrengthValidator extends StrengthValidator
     {
@@ -22,13 +22,13 @@
          */
         public function init()
         {
-            Yii::setAlias('@pwdstrength', dirname(__FILE__));
+            Yii::setAlias('@pwdstrength', __DIR__);
 
             if (empty($this->i18n)) {
                 $this->i18n = [
                     'class'          => 'yii\i18n\PhpMessageSource',
                     'sourceLanguage' => 'en-US',
-                    'basePath'       => '@common/messages'
+                    'basePath'       => '@pwdstrength/messages'
                 ];
             }
 

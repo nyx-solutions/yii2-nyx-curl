@@ -1,6 +1,6 @@
 <?php
 
-    namespace common\components\validators;
+    namespace nox\validators;
 
     use yii\validators\Validator;
 
