@@ -1,12 +1,12 @@
 {
-  "name": "nox-it/yii2-nox-validators",
-  "description": "Yii2 NOX Validators",
+  "name": "nox-it/yii2-nox-curl",
+  "description": "Yii2 NOX cUrl",
   "type": "library",
   "keywords": [
     "yii2",
     "extension",
-    "validators",
-    "forms",
+    "curl",
+    "request",
     "framework",
     "php"
   ],
@@ -21,15 +21,14 @@
   "minimum-stability": "stable",
   "require": {
     "yiisoft/yii2": "2.*",
-    "kartik-v/yii2-krajee-base": "*",
-    "kartik-v/yii2-password": "dev-master",
     "nox-it/yii2-nox": "1.*",
     "nox-it/yii2-nox-helpers": "1.*",
+    "php-curl-class/php-curl-class": "*",
     "php": ">=5.4.0"
   },
   "autoload": {
     "psr-4": {
-      "nox\\validators\\": "validators/"
+      "nox\\request\\": "request/"
     }
   },
   "config": {
@@ -38,7 +37,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/nox-it/yii2-nox-validators"
+      "url": "https://github.com/nox-it/yii2-nox-curl"
     }
   ]
 }
