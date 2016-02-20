@@ -8,7 +8,7 @@
      * @category Curl
      * @author   Jonatas Sas
      *
-     * @package  common\components\request
+     * @package  nox\request
      */
     class Curl extends \Curl\Curl
     {

@@ -23,7 +23,7 @@
     "yiisoft/yii2": "2.*",
     "nox-it/yii2-nox": "1.*",
     "nox-it/yii2-nox-helpers": "1.*",
-    "php-curl-class/php-curl-class": "*",
+    "php-curl-class/php-curl-class": "4.*",
     "php": ">=5.4.0"
   },
   "autoload": {

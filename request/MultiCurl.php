@@ -1,6 +1,6 @@
 <?php
 
-    namespace common\components\request;
+    namespace nox\request;
 
     /**
      * Class MultiCurl
@@ -8,7 +8,7 @@
      * @category Curl
      * @author   Jonatas Sas
      *
-     * @package  common\components\request
+     * @package  nox\request
      */
     class MultiCurl extends \Curl\MultiCurl
     {
