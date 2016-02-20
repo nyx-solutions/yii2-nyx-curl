@@ -1,0 +1,39 @@
+{
+  "name": "nox-it/yii2-nox-validators",
+  "description": "Yii2 NOX Validators",
+  "type": "library",
+  "keywords": [
+    "yii2",
+    "extension",
+    "helpers",
+    "framework",
+    "php"
+  ],
+  "license": "Apache-2.0",
+  "version": "1.0.2",
+  "authors": [
+    {
+      "name": "Jonatas Sas",
+      "email": "atendimento@jsas.com.br"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "yiisoft/yii2": "2.*",
+    "php": ">=5.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "nox\\validators\\": "validators/"
+    }
+  },
+  "config": {
+    "process-timeout": 1800
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/nox-it/yii2-nox-validators"
+    }
+  ]
+}
