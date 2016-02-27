@@ -11,7 +11,7 @@
     "php"
   ],
   "license": "Apache-2.0",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     {
       "name": "Jonatas Sas",
@@ -37,7 +37,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/nox-it/yii2-nox-curl"
+      "url": "https://bitbucket.org/nox-it-solutions/yii2-nox-curl"
     }
   ]
 }
