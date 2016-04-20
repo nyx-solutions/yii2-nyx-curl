@@ -11,7 +11,7 @@
     "php"
   ],
   "license": "Apache-2.0",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "authors": [
     {
       "name": "Jonatas Sas",
@@ -22,7 +22,6 @@
   "require": {
     "yiisoft/yii2": "2.*",
     "nox-it/yii2-nox": "1.*",
-    "nox-it/yii2-nox-helpers": "1.*",
     "php-curl-class/php-curl-class": "4.*",
     "php": ">=5.4.0"
   },
@@ -37,7 +36,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://bitbucket.org/nox-it-solutions/yii2-nox-curl"
+      "url": "https://bitbucket.org/noxit-plugins/yii2-nox-curl"
     }
   ]
 }
