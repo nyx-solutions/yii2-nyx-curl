@@ -11,7 +11,7 @@
     "php"
   ],
   "license": "Apache-2.0",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "authors": [
     {
       "name": "Jonatas Sas",
@@ -20,10 +20,10 @@
   ],
   "minimum-stability": "stable",
   "require": {
+    "php": ">=5.4.0",
     "yiisoft/yii2": "2.*",
     "nox-it/yii2-nox": "1.*",
-    "php-curl-class/php-curl-class": "4.*",
-    "php": ">=5.4.0"
+    "php-curl-class/php-curl-class": "4.*"
   },
   "autoload": {
     "psr-4": {
