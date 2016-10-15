@@ -10,8 +10,8 @@
     "framework",
     "php"
   ],
-  "license": "Apache-2.0",
-  "version": "1.0.4",
+  "license": "BSD-3-Clause",
+  "version": "1.0.5",
   "authors": [
     {
       "name": "Jonatas Sas",
@@ -22,7 +22,8 @@
   "require": {
     "php": ">=5.4.0",
     "nox-it/yii2-nox": "1.*",
-    "php-curl-class/php-curl-class": "4.*"
+    "nox-it/yii2-nox-helpers": "1.*",
+    "php-curl-class/php-curl-class": "7.*"
   },
   "autoload": {
     "psr-4": {
@@ -35,7 +36,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://bitbucket.org/noxit-plugins/yii2-nox-curl"
+      "url": "https://github.com/jsas-development/yii2-nox-curl"
     }
   ]
 }
