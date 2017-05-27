@@ -98,3 +98,8 @@ _shortcuts
 ######################
 /var/cache
 /var/session
+
+# Other #
+######################
+/.admin
+/upstream.sh
