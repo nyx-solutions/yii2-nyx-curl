@@ -2,16 +2,9 @@
   "name": "nox-it/yii2-nox-curl",
   "description": "Yii2 NOX cUrl",
   "type": "library",
-  "keywords": [
-    "yii2",
-    "extension",
-    "curl",
-    "request",
-    "framework",
-    "php"
-  ],
+  "keywords": ["yii2", "extension", "curl", "request", "framework", "php"],
   "license": "BSD-3-Clause",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "authors": [
     {
       "name": "Jonatas Sas",
@@ -20,10 +13,10 @@
   ],
   "minimum-stability": "stable",
   "require": {
-    "php": ">=5.4.0",
-    "nox-it/yii2-nox": "1.*",
-    "nox-it/yii2-nox-helpers": "1.*",
-    "php-curl-class/php-curl-class": "7.*"
+    "php": ">=7.4.0",
+    "nox-it/yii2-nox": "~2.0.0",
+    "nox-it/yii2-nox-helpers": "~2.0.0",
+    "php-curl-class/php-curl-class": "~8.8.0"
   },
   "autoload": {
     "psr-4": {
@@ -34,6 +27,10 @@
     "process-timeout": 1800
   },
   "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    },
     {
       "type": "vcs",
       "url": "https://github.com/jsas-development/yii2-nox-curl"
