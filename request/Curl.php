@@ -1,6 +1,6 @@
 <?php
 
-    namespace nox\request;
+    namespace nyx\request;
 
     /**
      * Class Curl
@@ -8,7 +8,7 @@
      * @category Curl
      * @author   Jonatas Sas
      *
-     * @package  nox\request
+     * @package  nyx\request
      */
     class Curl extends \Curl\Curl
     {

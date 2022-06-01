@@ -1,10 +1,10 @@
 {
-  "name": "nox-it/yii2-nox-curl",
-  "description": "Yii2 NOX cUrl",
+  "name": "nyx-solutions/yii2-nyx-curl",
+  "description": "Yii2 NYX cUrl",
   "type": "library",
   "keywords": ["yii2", "extension", "curl", "request", "framework", "php"],
   "license": "BSD-3-Clause",
-  "version": "2.0.0",
+  "version": "4.0.0",
   "authors": [
     {
       "name": "Jonatas Sas",
@@ -14,13 +14,13 @@
   "minimum-stability": "stable",
   "require": {
     "php": ">=7.4.0",
-    "nox-it/yii2-nox": "~2.0.0",
-    "nox-it/yii2-nox-helpers": "~2.0.0",
+    "nyx-solutions/yii2-nyx": "~2.0.0",
+    "nyx-solutions/yii2-nyx-helpers": "~2.0.0",
     "php-curl-class/php-curl-class": "~8.8.0"
   },
   "autoload": {
     "psr-4": {
-      "nox\\request\\": "request/"
+      "nyx\\request\\": "request/"
     }
   },
   "config": {
@@ -33,7 +33,7 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/jsas-development/yii2-nox-curl"
+      "url": "https://github.com/nyx-solutions/yii2-nyx-curl"
     }
   ]
 }

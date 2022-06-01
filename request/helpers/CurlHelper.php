@@ -1,13 +1,13 @@
 <?php
 
-    namespace nox\request\helpers;
+    namespace nyx\request\helpers;
 
-    use nox\helpers\UrlHelper;
+    use nyx\helpers\UrlHelper;
 
     /**
      * Class CurlHelper
      *
-     * @package nox\request\helpers
+     * @package nyx\request\helpers
      */
     class CurlHelper extends UrlHelper
     {
