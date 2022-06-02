@@ -35,7 +35,6 @@ Thumbs.db
 #########
 *App_Data*
 *aspnet_client*
-_project
 *error_log*
 *access_log*
 *.sass-cache
@@ -49,30 +48,6 @@ _project
 *.lnk
 *.user.ini
 *.url
-_site
-_admin
-_project
-_info
-_shortcuts
-.permissions.sh
-.publish.sh
-.refresh.sh
-.database.sh
-.make-site.sh
-.commit.sh
-.permissions.cmd
-.publish.cmd
-.refresh.cmd
-.database.cmd
-.make-site.cmd
-.simple-refresh.cmd
-.build.cmd
-.git-load.cmd
-.load-git.cmd
-.migrate.cmd
-.new-migration.cmd
-*~
-*backwpup_log_*.html
 .picasa.ini
 *.sublime
 *.sublime*
@@ -81,25 +56,5 @@ _shortcuts
 
 # Composer #
 ######################
-.composer-install.cmd
-.composer-update.cmd
 /vendor
-
-# BackWPup #
-######################
-*backwpup-*-temp*
-*backwpup-*-logs*
-
-# DevHtaccess #
-######################
-/.htaccess.dev
-
-# Magento #
-######################
-/var/cache
-/var/session
-
-# Other #
-######################
-/.admin
-/upstream.sh
+/composer.lock

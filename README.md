@@ -1,17 +1,17 @@
-Yii PHP Framework Version 2 / NOX cUrl
+Yii PHP Framework Version 2 / NYX cUrl
 ======================================
 
-NOX cUrl is an object-oriented wrapper of the PHP cURL extension that makes it easy to send HTTP requests and integrate with web APIs. This build targets the Yii Framework version 2 and curretly does not adds any functionality to the main library (PHP Curl Class), but adds the `\nox\request\helpers\CurlHelper` which extends Yii2 Base URL Helper and implements methods to verify and manage URLs.
+NYX cUrl is an object-oriented wrapper of the PHP cURL extension that makes it easy to send HTTP requests and integrate with web APIs. This build targets the Yii Framework version 2 and curretly does not adds any functionality to the main library (PHP Curl Class), but adds the `\nyx\request\helpers\CurlHelper` which extends Yii2 Base URL Helper and implements methods to verify and manage URLs.
 
 This extension uses the PHP Curl Class 7.* by Zach Borboa. For more details about the PHP Curl Class please refer to [php-curl-class/php-curl-class](https://github.com/php-curl-class/php-curl-class) or [www.phpcurlclass.com](https://www.phpcurlclass.com/). 
 
-[![Latest Stable Version](https://poser.pugx.org/nox-it/yii2-nox-curl/v/stable)](https://packagist.org/packages/nox-it/yii2-nox-curl)
-[![Total Downloads](https://poser.pugx.org/nox-it/yii2-nox-curl/downloads)](https://packagist.org/packages/nox-it/yii2-nox-curl)
-[![Latest Unstable Version](https://poser.pugx.org/nox-it/yii2-nox-curl/v/unstable)](https://packagist.org/packages/nox-it/yii2-nox-curl)
-[![License](https://poser.pugx.org/nox-it/yii2-nox-curl/license)](https://packagist.org/packages/nox-it/yii2-nox-curl)
-[![Monthly Downloads](https://poser.pugx.org/nox-it/yii2-nox-curl/d/monthly)](https://packagist.org/packages/nox-it/yii2-nox-curl)
-[![Daily Downloads](https://poser.pugx.org/nox-it/yii2-nox-curl/d/daily)](https://packagist.org/packages/nox-it/yii2-nox-curl)
-[![composer.lock](https://poser.pugx.org/nox-it/yii2-nox-curl/composerlock)](https://packagist.org/packages/nox-it/yii2-nox-curl)
+[![Latest Stable Version](https://poser.pugx.org/nyx-solutions/yii2-nyx-curl/v/stable)](https://packagist.org/packages/nyx-solutions/yii2-nyx-curl)
+[![Total Downloads](https://poser.pugx.org/nyx-solutions/yii2-nyx-curl/downloads)](https://packagist.org/packages/nyx-solutions/yii2-nyx-curl)
+[![Latest Unstable Version](https://poser.pugx.org/nyx-solutions/yii2-nyx-curl/v/unstable)](https://packagist.org/packages/nyx-solutions/yii2-nyx-curl)
+[![License](https://poser.pugx.org/nyx-solutions/yii2-nyx-curl/license)](https://packagist.org/packages/nyx-solutions/yii2-nyx-curl)
+[![Monthly Downloads](https://poser.pugx.org/nyx-solutions/yii2-nyx-curl/d/monthly)](https://packagist.org/packages/nyx-solutions/yii2-nyx-curl)
+[![Daily Downloads](https://poser.pugx.org/nyx-solutions/yii2-nyx-curl/d/daily)](https://packagist.org/packages/nyx-solutions/yii2-nyx-curl)
+[![composer.lock](https://poser.pugx.org/nyx-solutions/yii2-nyx-curl/composerlock)](https://packagist.org/packages/nyx-solutions/yii2-nyx-curl)
 
 ### Requirements
 
@@ -24,13 +24,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```bash
-php composer.phar require --prefer-dist nox-it/yii2-nox-curl "*"
+php composer.phar require --prefer-dist nyx-solutions/yii2-nyx-curl "*"
 ```
 
 or add
 
 ```
-"nox-it/yii2-nox-curl": "*"
+"nyx-solutions/yii2-nyx-curl": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -40,7 +40,7 @@ to the require section of your `composer.json` file.
 ### Basic Example
 
 ```php
-$request = new \nox\request\Curl();
+$request = new \nyx\request\Curl();
 
 $request->get('https://www.example.com/');
 ```
@@ -48,7 +48,7 @@ $request->get('https://www.example.com/');
 ### GET Example
 
 ```php
-$request = new \nox\request\Curl();
+$request = new \nyx\request\Curl();
 
 $request->get('https://www.example.com/search', ['q' => 'keyword']);
 ```
@@ -56,7 +56,7 @@ $request->get('https://www.example.com/search', ['q' => 'keyword']);
 ### POST Example
 
 ```php
-$request = new \nox\request\Curl();
+$request = new \nyx\request\Curl();
 
 $request->post('https://www.example.com/login/', ['username' => 'myusername', 'password' => 'mypassword']);
 ```
@@ -64,7 +64,7 @@ $request->post('https://www.example.com/login/', ['username' => 'myusername', 'p
 ### Basic Authentication with Error Handle Example
 
 ```php
-$request = new \nox\request\Curl();
+$request = new \nyx\request\Curl();
 
 $request->setBasicAuthentication('username', 'password');
 $request->setUserAgent('MyUserAgent/0.0.1 (+https://www.example.com/bot.html)');
@@ -89,7 +89,7 @@ var_dump($request->responseHeaders);
 ### setOpt method Example
 
 ```php
-$request = new \nox\request\Curl();
+$request = new \nyx\request\Curl();
 
 $request->setOpt(CURLOPT_FOLLOWLOCATION, true);
 
@@ -99,7 +99,7 @@ $request->get('https://shortn.example.com/bHbVsP');
 ### PUT Example
 
 ```php
-$request = new \nox\request\Curl();
+$request = new \nyx\request\Curl();
 
 $request->put('https://api.example.com/user/', ['first_name' => 'Zach', 'last_name' => 'Borboa']);
 ```
@@ -107,13 +107,13 @@ $request->put('https://api.example.com/user/', ['first_name' => 'Zach', 'last_na
 ### PATCH Example
 
 ```php
-$request = new \nox\request\Curl();
+$request = new \nyx\request\Curl();
 
 $request->patch('https://api.example.com/profile/', ['image' => '@path/to/file.jpg']);
 ```
 
 ```php
-$request = new \nox\request\Curl();
+$request = new \nyx\request\Curl();
 
 $request->patch('https://api.example.com/profile/', ['image' => new CURLFile('path/to/file.jpg')]);
 ```
@@ -121,7 +121,7 @@ $request->patch('https://api.example.com/profile/', ['image' => new CURLFile('pa
 ### DELETE Example
 
 ```php
-$request = new \nox\request\Curl();
+$request = new \nyx\request\Curl();
 
 $request->delete('https://api.example.com/user/', ['id' => '1234']);
 ```
@@ -131,7 +131,7 @@ $request->delete('https://api.example.com/user/', ['id' => '1234']);
 ```php
 // Enable gzip compression and download a file.
 
-$request = new \nox\request\Curl();
+$request = new \nyx\request\Curl();
 
 $request->setOpt(CURLOPT_ENCODING , 'gzip');
 
@@ -140,7 +140,7 @@ $request->download('https://www.example.com/image.png', '/tmp/myimage.png');
 
 ```php
 // Case-insensitive access to headers.
-$request = new \nox\request\Curl();
+$request = new \nyx\request\Curl();
 $request->download('https://www.example.com/image.png', '/tmp/myimage.png');
 echo $request->responseHeaders['Content-Type'] . "\n"; // image/png
 echo $request->responseHeaders['CoNTeNT-TyPE'] . "\n"; // image/png
@@ -150,7 +150,7 @@ echo $request->responseHeaders['CoNTeNT-TyPE'] . "\n"; // image/png
 $request->close();
 ```
 
-### \nox\request\Curl Available Methods
+### \nyx\request\Curl Available Methods
 ```php
 Curl::__construct($base_url = null)
 Curl::__destruct()
@@ -211,7 +211,7 @@ Curl::is_array_assoc($array)
 Curl::is_array_multidim($array)
 ```
 
-### \nox\request\MultiCurl Available Methods
+### \nyx\request\MultiCurl Available Methods
 
 ```php
 MultiCurl::__construct($base_url = null)
@@ -276,7 +276,7 @@ $ curl https://www.example.com/display_webpage.php?url=file%3A%2F%2F%2Fetc%2Fpas
 // display_webpage.php
 $url = $_GET['url']; // DANGER!
 
-$request = new \nox\request\Curl();
+$request = new \nyx\request\Curl();
 $request->get($url);
 
 echo $request->response;
@@ -288,7 +288,7 @@ Safer:
 
 $url = $_GET['url'];
 
-if (!\nox\request\helpers\CurlHelper::isValidUrl($url)) {
+if (!\nyx\request\helpers\CurlHelper::isValidUrl($url)) {
     die('Unsafe url detected.');
 }
 ```
@@ -309,7 +309,7 @@ $ curl https://www.example.com/upload_photo.php --data "photo=@/etc/passwd"
 
 ```php
 // upload_photo.php
-$request = new \nox\request\Curl();
+$request = new \nyx\request\Curl();
 
 $request->post('http://www.anotherwebsite.com/', ['photo' => $_POST['photo']]); // DANGER!
 ```
@@ -320,7 +320,7 @@ $request->post('http://www.anotherwebsite.com/', ['photo' => $_POST['photo']]); 
   Downloading https://www.example.com/image.png may redirect and download https://www.evil.com/virus.exe
 
 ```php
-$request = new \nox\request\Curl();
+$request = new \nyx\request\Curl();
 
 $request->setOpt(CURLOPT_FOLLOWLOCATION, true); // DANGER!
 
@@ -340,7 +340,7 @@ curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE); // DANGER!
 
 ## License
 
-**yii2-nox-curl** is released under the BSD 3-Clause License. See the bundled `LICENSE.md` for details.
+**yii2-nyx-curl** is released under the BSD 3-Clause License. See the bundled `LICENSE.md` for details.
 
 To find more informations about the **PHP Curl Class** Licence, please refer to [php-curl-class/php-curl-class](https://github.com/php-curl-class/php-curl-class).
 
